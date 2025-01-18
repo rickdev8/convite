@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite: Retiro Espiritual</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Macondo&family=Playwrite+IN&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="tudo">
+        <!-- Baú de Tesouro -->
+        <div class="div-bau" onclick="openInvitation()">
+            <div class="bau">
+                <img src="pngtree-chest-treasure-closed-wooden-trunk-with-forgery-png-image_11993195.png" alt="Baú">
+            </div>
+        </div>
+
+        <!-- Convite (inicialmente escondido) -->
+        <div class="invitation" id="invitation">
+            <h1 class="title">Convite Especial</h1>
+            <div class="content">
+                <h2 class="event-name">Retiro Espiritual: Face a face com o Altíssimo</h2>
+                <h3 class="guest">Convidado Principal: <strong>Espírito Santo</strong></h3>
+                <p class="quote">
+                    “Pois onde estiver o seu tesouro, aí estará também o seu coração”<br>
+                    <span class="verse">(Mateus 6:21)</span>
+                </p>
+                <p class="message">
+                    O Altíssimo é o nosso maior tesouro! Vamos buscá-lo juntas?
+                </p>
+                <div class="details">
+                    <p><strong>Datas:</strong> 1 & 2 de Março/2025</p>
+                    <p><strong>Local:</strong> Chácra Serra D’Água (Chapada Diamantina)</p>
+                    <p><strong>Transporte:</strong> Van</p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function openInvitation() {
+                // Ao clicar no baú, exibe o convite com animação
+                document.getElementById('invitation').classList.add('show');
+            }
+        </script>
+    </div>
+</body>
+
+</html>

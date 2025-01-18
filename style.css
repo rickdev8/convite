@@ -1,0 +1,226 @@
+/* Reseta os margens e paddings de todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos do body para centralizar o conteúdo */
+body {
+    background-size: cover;
+  
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex; /* Usando flexbox para centralizar */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* A altura da tela */
+    text-align: center;
+}
+
+/* Baú */
+.div-bau {
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.bau img {
+    width:450px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.bau:hover img {
+    transform: scale(1.1);
+}
+
+/* Convite */
+.invitation {
+    box-shadow: 0px 0px 20px red;
+    background: #f8f1e1;
+    border: 3px solid #8c6e4a;
+    border-radius: 20px;
+    width: 600px;
+    height: 800px;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    opacity: 0; /* Inicialmente invisível */
+    transform: scale(0); /* Inicialmente pequeno */
+    position: absolute; /* Faz o convite ficar na frente do baú */
+    top: 50%; /* Posiciona o convite no centro vertical da tela */
+    left: 50%; /* Posiciona o convite no centro horizontal da tela */
+    transform: translate(-50%, -50%) scale(0); /* Centraliza o convite */
+    transition: opacity 1s ease, transform 1s ease;
+    z-index: 10; /* Faz o convite ficar acima do baú */
+}
+
+.invitation.show {
+    opacity: 1; /* Torna o convite visível */
+    transform: translate(-50%, -50%) scale(1); /* Torna o convite no tamanho original */
+}
+
+.title {
+    font-size: 3em;
+    color: #8c6e4a;
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.event-name {
+    font-size: 2.2em;
+    color: #5c3c1b;
+    margin: 40px 0;
+    font-weight: 600;
+}
+
+.guest {
+    font-size: 1.7em;
+    color: #6b4f27;
+    margin-bottom: 15px;
+}
+
+.quote {
+    font-size: 1.7em;
+    color: #5a4d3d;
+    margin: 40px 0;
+    font-style: italic;
+}
+
+.verse {
+    font-size: 1.1em;
+    color: #8c6e4a;
+}
+
+.message {
+    font-size: 1.5em;
+    color: #6b4f27;
+    margin: 50px 0;
+    font-weight: 500;
+}
+
+.details {
+    font-size: 1.5;
+    color: #5a4d3d;
+    margin-top: 50px;
+    text-align: left;
+}
+
+.details p {
+    margin-bottom: 8px;
+}
+
+.details strong {
+    color: #8c6e4a;
+    font-weight: bold;
+}
+
+
+@media(max-width:500px){
+
+    .tudo{
+        margin-left: -120px;
+        width: 150%;
+        height: 100%;
+        background-image: url('WhatsApp\ Image\ 2025-01-15\ at\ 18.45.53.jpeg');
+    }
+    /* Estilos do body para centralizar o conteúdo */
+body {
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex; /* Usando flexbox para centralizar */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 120vh; /* A altura da tela */
+    text-align: center;
+}
+
+    /* Baú */
+.div-bau {
+    margin-top: 250px;
+    margin-left: 120px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.bau img {
+    background-size: cover;
+    width:350px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+.invitation {
+    box-shadow: 0px 0px 20px rgb(245, 205, 130);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    background: #f8f1e1;
+    border: 3px solid #8c6e4a;
+    border-radius: 20px;
+    width: 360px;
+    height: 420px;
+    padding: 20px;
+}
+.title {
+    font-family: "Macondo", serif;
+    font-size: 2em;
+    color: #8c6e4a;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.event-name {
+    font-family:Playwrite IN;
+    font-size: 1em;
+    color: #5c3c1b;
+    margin: 20px 0;
+}
+
+.guest {
+    font-family: "Macondo", serif;
+    font-size: 0.8em;
+    color: #6b4f27;
+    margin-bottom: 10px;
+}
+
+.quote {
+    font-size: 1em;
+    color: #5a4d3d;
+    margin: 15px 0;
+    font-style: italic;
+}
+
+.verse {
+    font-size: 0.8em;
+    color: #8c6e4a;
+}
+
+.message {
+    font-family:Playwrite IN ;
+    font-size: 0.9em;
+    color: #6b4f27;
+    margin: 15px 0;
+    font-weight: 600;
+}
+
+.details {
+    font-size: 0.7em;
+    color: #5a4d3d;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.details p {
+    margin-bottom: 8px;
+}
+
+.details strong {
+    color: #8c6e4a;
+    font-weight: bold;
+}
+
+
+}
